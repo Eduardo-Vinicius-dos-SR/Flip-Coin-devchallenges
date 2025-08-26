@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+	margin: 30px 0;
+	padding: 10px;
+	background-color: var(--Background);
+	color: var(--Text-color);
+	text-align: center;
+	font-family: "Kanit", sans-serif;
+}
+
+h1.title,
+.text,
+.coin-card h3,
+.btn-random {
+	font-weight: 600;
+}
+
+h1.title {
+	font-size: 6.3rem;
+	text-shadow: 6px 0 0 var(--Shadow-color), -6px 0 0 var(--Shadow-color), 0 -6px 0 var(--Shadow-color),
+		0 6px 0 var(--Shadow-color);
+}
+
+.coin-card {
+	width: 160px;
+	min-height: 330px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	margin: 10px 0 20px;
+	padding-top: 160px;
+}
+
+p.text,
+div.coin-card h3 {
+	font-size: 2.4rem;
+	margin-bottom: 35px;
+}
+
+p.text,
+div.coin-card h3 {
+	margin-bottom: 35px;
+}
+
+.coin-shadow {
+	width: 63%;
+	align-self: flex-end;
+	margin: 0 auto;
+}
+
+div.coin-card h3 {
+	margin: 40px 0;
+}
+
+button.btn-random {
+	display: flex;
+	align-items: center;
+	border: none;
+	border-bottom: 3px solid var(--Button-border-bottom);
+	border-radius: 10px;
+	padding: 14px 35px;
+	background-color: var(--Button-background);
+	color: var(--Text-color);
+	font-size: 2rem;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+button.btn-random:hover {
+	opacity: 0.8;
+}
+button.btn-random:active {
+	margin-top: 3px;
+	border-bottom: none;
+}
+
+/* Coin states */
+
+.coin {
+	display: none;
+}
+
+.coin.active {
+	display: block;
+}
+
+.coin-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.coin.enter .coin-image {
+	animation: slideIn 0.5s ease;
+}
+
+.coin.exit .coin-image {
+	animation: slideOut 0.5s ease;
+}
+
+/* Animations */
+
+@keyframes slideIn {
+	from {
+		transform: translateY(-1000px);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes slideOut {
+	from {
+		transform: translateY(0);
+		opacity: 1;
+	}
+	to {
+		transform: translateY(-1000px);
+		opacity: 0;
+	}
+}
