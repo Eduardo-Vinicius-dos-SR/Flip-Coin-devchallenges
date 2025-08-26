@@ -6,15 +6,15 @@
 
 <div align="center">
   <h3>
-    <a href="{https://your-demo-link.your-domain}">
+    <a href="{https://your-demo-link.your-domain}" target="_blank">
       Live site
     </a>
     <span> | </span>
-    <a href="{https://your-url-to-the-solution}">
+    <a href="{https://your-url-to-the-solution}" target="_blank">
       Solution
     </a>
     <span> | </span>
-    <a href="https://devchallenges.io/challenge/flip-the-coin">
+    <a href="https://devchallenges.io/challenge/flip-the-coin" target="_blank">
       Challenge
     </a>
   </h3>
