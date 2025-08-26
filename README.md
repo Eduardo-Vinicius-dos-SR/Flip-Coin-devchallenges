@@ -6,15 +6,15 @@
 
 <div align="center">
   <h3>
-    <a href="{https://your-demo-link.your-domain}" target="_blank">
+    <a href="https://eduardo-vinicius-dos-sr.github.io/Flip-Coin-devchallenges/">
       Live site
     </a>
     <span> | </span>
-    <a href="{https://your-url-to-the-solution}" target="_blank">
+    <a href="{https://your-url-to-the-solution}" >
       Solution
     </a>
     <span> | </span>
-    <a href="https://devchallenges.io/challenge/flip-the-coin" target="_blank">
+    <a href="https://devchallenges.io/challenge/flip-the-coin">
       Challenge
     </a>
   </h3>
